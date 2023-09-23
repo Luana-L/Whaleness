@@ -16,6 +16,7 @@
 		1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574C2ABF646D00B85F0A /* CheckInPortal.swift */; };
 		1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574E2ABF647B00B85F0A /* HomePortal.swift */; };
 		155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357502ABF648C00B85F0A /* ChatPortal.swift */; };
+		155357532ABF6E8C00B85F0A /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357522ABF6E8C00B85F0A /* LandingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1553574C2ABF646D00B85F0A /* CheckInPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInPortal.swift; sourceTree = "<group>"; };
 		1553574E2ABF647B00B85F0A /* HomePortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePortal.swift; sourceTree = "<group>"; };
 		155357502ABF648C00B85F0A /* ChatPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPortal.swift; sourceTree = "<group>"; };
+		155357522ABF6E8C00B85F0A /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +63,13 @@
 		1553570C2ABF5C9E00B85F0A /* Whaleness */ = {
 			isa = PBXGroup;
 			children = (
+				1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */,
+				155357522ABF6E8C00B85F0A /* LandingPage.swift */,
 				1553572B2ABF62E700B85F0A /* LoginView.swift */,
 				1553574A2ABF645D00B85F0A /* TabViewNav.swift */,
 				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
 				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
 				155357502ABF648C00B85F0A /* ChatPortal.swift */,
-				1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */,
 				1553570F2ABF5C9E00B85F0A /* ContentView.swift */,
 				155357112ABF5CA000B85F0A /* Assets.xcassets */,
 				155357132ABF5CA000B85F0A /* Preview Content */,
@@ -158,6 +161,7 @@
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
 				1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */,
+				155357532ABF6E8C00B85F0A /* LandingPage.swift in Sources */,
 				1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

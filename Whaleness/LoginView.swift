@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Binding var isPatient: Bool
+    
     @State private var errorMessage = ""
     @State private var showErrorAlert = false
     
@@ -31,7 +33,7 @@ struct LoginView: View {
         ZStack {
             Color("OffWhite").ignoresSafeArea()
             VStack(spacing: 15){
-                Image("whale-icon")
+                Image("dark-background-finley")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(.horizontal, 10)
@@ -50,7 +52,7 @@ struct LoginView: View {
                     Spacer(minLength: 15)
                 }
                 .frame(height: 50)
-                .background(Color("BlueGrey"))
+                .background(Color("LightGrey"))
                 .cornerRadius(10.0)
                 
                 //password text field
@@ -82,7 +84,7 @@ struct LoginView: View {
                     Spacer(minLength: 10)
                 }
                 .frame(height: 50)
-                .background(Color("BlueGrey"))
+                .background(Color("LightGrey"))
                 .cornerRadius(10.0)
                 
                 //forgot pass
@@ -105,7 +107,7 @@ struct LoginView: View {
                 } label: {
                     Text("Sign In")
                         .frame(width: 250, height: 50)
-                        .background(isSignInDisabled ? Color("DarkBlue").opacity(0.4) : Color("DarkBlue"))
+                        .background(isSignInDisabled ? Color("DarkBlue").opacity(0.6) : Color("DarkBlue"))
                         .cornerRadius(10)
                         .foregroundColor(isSignInDisabled ? .white.opacity(0.4) : .white)
                         .font(Font.system(size: 20))
@@ -123,7 +125,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(isPatient: Binding.constant(false))
     }
 }
 
