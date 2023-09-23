@@ -116,7 +116,7 @@ struct LoginView: View {
                 .alert(isPresented: $showErrorAlert) {
                     Alert(title: Text("Login Failed"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
                 }
-                .offset(y: 60)
+                .offset(y: 30)
             }
             .frame(width: 350)
         }

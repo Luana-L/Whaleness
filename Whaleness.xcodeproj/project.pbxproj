@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */; };
-		155357102ABF5C9E00B85F0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553570F2ABF5C9E00B85F0A /* ContentView.swift */; };
 		155357122ABF5CA000B85F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357112ABF5CA000B85F0A /* Assets.xcassets */; };
 		155357152ABF5CA000B85F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357142ABF5CA000B85F0A /* Preview Assets.xcassets */; };
 		155357412ABF62E700B85F0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553572B2ABF62E700B85F0A /* LoginView.swift */; };
@@ -17,12 +16,13 @@
 		1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574E2ABF647B00B85F0A /* HomePortal.swift */; };
 		155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357502ABF648C00B85F0A /* ChatPortal.swift */; };
 		155357532ABF6E8C00B85F0A /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357522ABF6E8C00B85F0A /* LandingPage.swift */; };
+		155357572ABF893200B85F0A /* PatientTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357562ABF893200B85F0A /* PatientTabView.swift */; };
+		155357592ABF893F00B85F0A /* ProviderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357582ABF893F00B85F0A /* ProviderTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1553570A2ABF5C9E00B85F0A /* Whaleness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whaleness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhalenessApp.swift; sourceTree = "<group>"; };
-		1553570F2ABF5C9E00B85F0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		155357112ABF5CA000B85F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155357142ABF5CA000B85F0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1553572B2ABF62E700B85F0A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 		1553574E2ABF647B00B85F0A /* HomePortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePortal.swift; sourceTree = "<group>"; };
 		155357502ABF648C00B85F0A /* ChatPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPortal.swift; sourceTree = "<group>"; };
 		155357522ABF6E8C00B85F0A /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		155357562ABF893200B85F0A /* PatientTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabView.swift; sourceTree = "<group>"; };
+		155357582ABF893F00B85F0A /* ProviderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +69,8 @@
 				155357522ABF6E8C00B85F0A /* LandingPage.swift */,
 				1553572B2ABF62E700B85F0A /* LoginView.swift */,
 				1553574A2ABF645D00B85F0A /* TabViewNav.swift */,
-				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
-				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
-				155357502ABF648C00B85F0A /* ChatPortal.swift */,
-				1553570F2ABF5C9E00B85F0A /* ContentView.swift */,
+				155357552ABF867500B85F0A /* ProviderViews */,
+				155357542ABF866400B85F0A /* PatientViews */,
 				155357112ABF5CA000B85F0A /* Assets.xcassets */,
 				155357132ABF5CA000B85F0A /* Preview Content */,
 			);
@@ -83,6 +83,25 @@
 				155357142ABF5CA000B85F0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		155357542ABF866400B85F0A /* PatientViews */ = {
+			isa = PBXGroup;
+			children = (
+				155357562ABF893200B85F0A /* PatientTabView.swift */,
+				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
+				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
+				155357502ABF648C00B85F0A /* ChatPortal.swift */,
+			);
+			path = PatientViews;
+			sourceTree = "<group>";
+		};
+		155357552ABF867500B85F0A /* ProviderViews */ = {
+			isa = PBXGroup;
+			children = (
+				155357582ABF893F00B85F0A /* ProviderTabView.swift */,
+			);
+			path = ProviderViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */,
-				155357102ABF5C9E00B85F0A /* ContentView.swift in Sources */,
 				155357412ABF62E700B85F0A /* LoginView.swift in Sources */,
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
 				1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */,
+				155357572ABF893200B85F0A /* PatientTabView.swift in Sources */,
+				155357592ABF893F00B85F0A /* ProviderTabView.swift in Sources */,
 				155357532ABF6E8C00B85F0A /* LandingPage.swift in Sources */,
 				1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */,
 			);
