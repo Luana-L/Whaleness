@@ -16,13 +16,20 @@ struct HomePortal: View {
                     .foregroundStyle(Color("DarkBlue"))
                 Spacer()
             }
+            .padding(.leading, 20)
             .padding(.vertical, 10)
             Text("Upcoming appointments...")
+                .padding(.leading, 20)
                 .font(Font.custom("Avenir", size: 20))
-            Text("Hello, World!")
-                .background(RoundedRectangle(cornerRadius: 4).stroke())
+            VStack(spacing: 5) {
+                ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date < $1.date }).prefix(3)) { appt in
+                    ApptBubbleView(apptment: appt)
+                }
+            }
+            .padding(15)
+
         }
-        .padding(.leading, 20)
+        
         .background(Color("OffWhite"))
     }
 }
