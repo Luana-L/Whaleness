@@ -21,6 +21,9 @@
 		1553575B2ABF91EE00B85F0A /* ApptBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553575A2ABF91EE00B85F0A /* ApptBubbleView.swift */; };
 		1553575D2ABF926C00B85F0A /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553575C2ABF926C00B85F0A /* Appointment.swift */; };
 		1553575F2ABF953100B85F0A /* ApptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553575E2ABF953100B85F0A /* ApptDetailView.swift */; };
+		155357622ABFACED00B85F0A /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357612ABFACED00B85F0A /* Treatment.swift */; };
+		155357642ABFAEF400B85F0A /* TreatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357632ABFAEF400B85F0A /* TreatBubbleView.swift */; };
+		155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357662ABFAF5B00B85F0A /* TreatDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		1553575A2ABF91EE00B85F0A /* ApptBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptBubbleView.swift; sourceTree = "<group>"; };
 		1553575C2ABF926C00B85F0A /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		1553575E2ABF953100B85F0A /* ApptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptDetailView.swift; sourceTree = "<group>"; };
+		155357612ABFACED00B85F0A /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		155357632ABFAEF400B85F0A /* TreatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatBubbleView.swift; sourceTree = "<group>"; };
+		155357662ABFAF5B00B85F0A /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +81,7 @@
 				155357522ABF6E8C00B85F0A /* LandingPage.swift */,
 				1553572B2ABF62E700B85F0A /* LoginView.swift */,
 				1553574A2ABF645D00B85F0A /* TabViewNav.swift */,
-				1553575C2ABF926C00B85F0A /* Appointment.swift */,
+				155357602ABFACDA00B85F0A /* Models */,
 				155357552ABF867500B85F0A /* ProviderViews */,
 				155357542ABF866400B85F0A /* PatientViews */,
 				155357112ABF5CA000B85F0A /* Assets.xcassets */,
@@ -96,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				155357562ABF893200B85F0A /* PatientTabView.swift */,
-				1553575A2ABF91EE00B85F0A /* ApptBubbleView.swift */,
-				1553575E2ABF953100B85F0A /* ApptDetailView.swift */,
-				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
+				155357652ABFAF0500B85F0A /* HomeViews */,
 				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
 				155357502ABF648C00B85F0A /* ChatPortal.swift */,
 			);
@@ -111,6 +115,27 @@
 				155357582ABF893F00B85F0A /* ProviderTabView.swift */,
 			);
 			path = ProviderViews;
+			sourceTree = "<group>";
+		};
+		155357602ABFACDA00B85F0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1553575C2ABF926C00B85F0A /* Appointment.swift */,
+				155357612ABFACED00B85F0A /* Treatment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		155357652ABFAF0500B85F0A /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
+				1553575A2ABF91EE00B85F0A /* ApptBubbleView.swift */,
+				1553575E2ABF953100B85F0A /* ApptDetailView.swift */,
+				155357632ABFAEF400B85F0A /* TreatBubbleView.swift */,
+				155357662ABFAF5B00B85F0A /* TreatDetailView.swift */,
+			);
+			path = HomeViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */,
+				155357622ABFACED00B85F0A /* Treatment.swift in Sources */,
 				155357412ABF62E700B85F0A /* LoginView.swift in Sources */,
+				155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */,
+				155357642ABFAEF400B85F0A /* TreatBubbleView.swift in Sources */,
 				1553575D2ABF926C00B85F0A /* Appointment.swift in Sources */,
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,

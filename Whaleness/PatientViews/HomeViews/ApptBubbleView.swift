@@ -25,7 +25,7 @@ struct ApptBubbleView: View {
     var body: some View {
         NavigationLink(destination: ApptDetailView(appt: apptment)) {
             HStack {
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading, spacing: 0) {
                     HStack {
                         Text("Date: \(apptment.date, formatter: dateFormatter)")
                         Spacer()
