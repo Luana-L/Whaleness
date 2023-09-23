@@ -11,6 +11,11 @@
 		155357102ABF5C9E00B85F0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553570F2ABF5C9E00B85F0A /* ContentView.swift */; };
 		155357122ABF5CA000B85F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357112ABF5CA000B85F0A /* Assets.xcassets */; };
 		155357152ABF5CA000B85F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357142ABF5CA000B85F0A /* Preview Assets.xcassets */; };
+		155357412ABF62E700B85F0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553572B2ABF62E700B85F0A /* LoginView.swift */; };
+		1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574A2ABF645D00B85F0A /* TabViewNav.swift */; };
+		1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574C2ABF646D00B85F0A /* CheckInPortal.swift */; };
+		1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574E2ABF647B00B85F0A /* HomePortal.swift */; };
+		155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357502ABF648C00B85F0A /* ChatPortal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		1553570F2ABF5C9E00B85F0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		155357112ABF5CA000B85F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155357142ABF5CA000B85F0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1553572B2ABF62E700B85F0A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1553574A2ABF645D00B85F0A /* TabViewNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewNav.swift; sourceTree = "<group>"; };
+		1553574C2ABF646D00B85F0A /* CheckInPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInPortal.swift; sourceTree = "<group>"; };
+		1553574E2ABF647B00B85F0A /* HomePortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePortal.swift; sourceTree = "<group>"; };
+		155357502ABF648C00B85F0A /* ChatPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPortal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,11 @@
 		1553570C2ABF5C9E00B85F0A /* Whaleness */ = {
 			isa = PBXGroup;
 			children = (
+				1553572B2ABF62E700B85F0A /* LoginView.swift */,
+				1553574A2ABF645D00B85F0A /* TabViewNav.swift */,
+				1553574E2ABF647B00B85F0A /* HomePortal.swift */,
+				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
+				155357502ABF648C00B85F0A /* ChatPortal.swift */,
 				1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */,
 				1553570F2ABF5C9E00B85F0A /* ContentView.swift */,
 				155357112ABF5CA000B85F0A /* Assets.xcassets */,
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */,
 				155357102ABF5C9E00B85F0A /* ContentView.swift in Sources */,
+				155357412ABF62E700B85F0A /* LoginView.swift in Sources */,
+				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
+				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
+				1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */,
 				1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
