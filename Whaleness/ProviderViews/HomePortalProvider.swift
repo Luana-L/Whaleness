@@ -48,19 +48,6 @@ struct HomePortalProvider: View {
                 .padding(.horizontal,20)
                 
                 HStack {
-                    NavigationLink(destination: LandingPage()) {
-                        Text("Logout")
-                            .font(Font.custom("Avenir", size: 18))
-                            .foregroundStyle(Color.blue)
-                    }
-                    Spacer()
-                }
-                .padding(.horizontal,20)
-                
-                .padding(.trailing, 20)
-                .padding(.bottom, 20)
-                
-                HStack {
                     Spacer()
                     NavigationLink(destination: CreateNewAppt(), label: {
                         Text("Schedule New Appointment")
