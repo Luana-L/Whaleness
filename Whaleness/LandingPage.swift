@@ -24,6 +24,7 @@ struct LandingPage: View {
                         .kerning(2)
                         .font(Font.custom("AvenirNext-BoldItalic", size: 40))
                     Text("your personal aftercare assistant! To get started, please let us know whether you are a...")
+                        .multilineTextAlignment(.center)
                         .font(Font.custom("Avenir", size: 20))
                         .padding(.horizontal, 10)
                     
@@ -33,7 +34,7 @@ struct LandingPage: View {
                             .background( Color("DarkBlue"))
                             .cornerRadius(15)
                             .foregroundColor(.white)
-                            .font(Font.system(size: 20))
+                            .font(Font.custom("Avenir",size: 20))
                             .padding(20)
                     }
                     .offset(y: 30)
@@ -44,7 +45,7 @@ struct LandingPage: View {
                             .background( Color("DarkBlue"))
                             .cornerRadius(15)
                             .foregroundColor(.white)
-                            .font(Font.system(size: 20))
+                            .font(Font.custom("Avenir", size: 20))
                             .padding(20)
                     }
                 }

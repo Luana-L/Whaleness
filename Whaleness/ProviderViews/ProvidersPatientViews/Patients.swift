@@ -15,7 +15,6 @@ struct Patients: View {
         VStack(spacing: 10) {
             
             Text("Patients")
-                .padding(.leading)
                 .font(Font.custom("Avenir", size: 30))
                 .foregroundStyle(Color("DarkBlue"))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -25,7 +24,7 @@ struct Patients: View {
             }
         }
         
-        .padding(.horizontal, 25)
+        .padding(.horizontal, 20)
     }
 }
 

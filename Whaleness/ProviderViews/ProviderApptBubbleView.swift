@@ -20,36 +20,44 @@ struct ProviderApptBubbleView: View {
         return formatter
     }
     
-    var apptment: Appointment
+    var provapptment: ProviderAppointment
     
     var body: some View {
         
-        NavigationLink(destination: ApptDetailView(appt: apptment)) {
-            HStack {
-                VStack(alignment: .leading, spacing: 0) {
-                    HStack {
-                        Text("Date: \(apptment.date, formatter: dateFormatter)")
-                        Spacer()
-                        Text(apptment.date, formatter: timeFormatter)
-                    }
-                    .font(Font.custom("Avenir",size:15))
-                    .foregroundColor(Color("DarkGrey"))
+        NavigationLink(destination: ProviderApptDetailView(provappt: provapptment)) {
+            VStack(alignment: .leading, spacing: 5) {
+                Group {
                     
-                    Text(apptment.location)
-                        .font(Font.custom("Avenir",size:18))
-                        .foregroundColor(.primary)
-                        .bold()
+                    HStack{
+                        Text("\(provapptment.date, formatter: dateFormatter)")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        Spacer()
+                        Text(provapptment.date, formatter: timeFormatter)
+                            .foregroundColor(.secondary)
+                            .font(.subheadline)
+                    }
+                    
+                    
+                    Text(provapptment.patient)
+                        .font(Font.custom("Avenir",size:20))
+                        .font(.subheadline)
+                        .foregroundColor(Color("DarkBlue"))
+                    
+                
                     HStack{
                         Text("View Details")
-                            .font(Font.custom("Avenir",size:18))
+                            .font(Font.custom("Avenir",size:15))
+                            .foregroundColor(.secondary)
                         Image(systemName: "chevron.right")
+                            .foregroundColor(.secondary)
                     }
-                    .foregroundStyle(Color.blue)
                         
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             Spacer()
+            
             
         }
         .padding(.vertical, 10)
@@ -63,5 +71,5 @@ struct ProviderApptBubbleView: View {
 }
 
 #Preview {
-    ProviderApptBubbleView(apptment: Appointment.MOCK_APPT[0])
+    ProviderApptBubbleView(provapptment: ProviderAppointment.MOCK_PROVAPPT[0])
 }
