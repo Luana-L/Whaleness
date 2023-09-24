@@ -11,7 +11,6 @@
 		155357122ABF5CA000B85F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357112ABF5CA000B85F0A /* Assets.xcassets */; };
 		155357152ABF5CA000B85F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357142ABF5CA000B85F0A /* Preview Assets.xcassets */; };
 		155357412ABF62E700B85F0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553572B2ABF62E700B85F0A /* LoginView.swift */; };
-		1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574A2ABF645D00B85F0A /* TabViewNav.swift */; };
 		1553574D2ABF646E00B85F0A /* CheckInPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574C2ABF646D00B85F0A /* CheckInPortal.swift */; };
 		1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553574E2ABF647B00B85F0A /* HomePortal.swift */; };
 		155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357502ABF648C00B85F0A /* ChatPortal.swift */; };
@@ -24,12 +23,14 @@
 		155357622ABFACED00B85F0A /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357612ABFACED00B85F0A /* Treatment.swift */; };
 		155357642ABFAEF400B85F0A /* TreatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357632ABFAEF400B85F0A /* TreatBubbleView.swift */; };
 		155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357662ABFAF5B00B85F0A /* TreatDetailView.swift */; };
+		155357692ABFBD2E00B85F0A /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */; };
 		BA29E6F62ABFB568004429D3 /* ProviderAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */; };
 		BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */; };
 		BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F92ABFB6F1004429D3 /* Patients.swift */; };
 		BA29E7002ABFB7D1004429D3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6FF2ABFB7D1004429D3 /* Patient.swift */; };
 		BA29E7022ABFBA0D004429D3 /* PatientBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */; };
 		BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */; };
+		BA29E7062ABFC7CE004429D3 /* ProviderApptBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,6 @@
 		155357112ABF5CA000B85F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155357142ABF5CA000B85F0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1553572B2ABF62E700B85F0A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		1553574A2ABF645D00B85F0A /* TabViewNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewNav.swift; sourceTree = "<group>"; };
 		1553574C2ABF646D00B85F0A /* CheckInPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInPortal.swift; sourceTree = "<group>"; };
 		1553574E2ABF647B00B85F0A /* HomePortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePortal.swift; sourceTree = "<group>"; };
 		155357502ABF648C00B85F0A /* ChatPortal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPortal.swift; sourceTree = "<group>"; };
@@ -51,12 +51,14 @@
 		155357612ABFACED00B85F0A /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
 		155357632ABFAEF400B85F0A /* TreatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatBubbleView.swift; sourceTree = "<group>"; };
 		155357662ABFAF5B00B85F0A /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
+		155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderAppointment.swift; sourceTree = "<group>"; };
 		BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePortalProvider.swift; sourceTree = "<group>"; };
 		BA29E6F92ABFB6F1004429D3 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		BA29E6FF2ABFB7D1004429D3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientBubbleView.swift; sourceTree = "<group>"; };
 		BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecords.swift; sourceTree = "<group>"; };
+		BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderApptBubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,6 @@
 				1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */,
 				155357522ABF6E8C00B85F0A /* LandingPage.swift */,
 				1553572B2ABF62E700B85F0A /* LoginView.swift */,
-				1553574A2ABF645D00B85F0A /* TabViewNav.swift */,
 				155357602ABFACDA00B85F0A /* Models */,
 				155357552ABF867500B85F0A /* ProviderViews */,
 				155357542ABF866400B85F0A /* PatientViews */,
@@ -116,6 +117,7 @@
 				155357562ABF893200B85F0A /* PatientTabView.swift */,
 				155357652ABFAF0500B85F0A /* HomeViews */,
 				1553574C2ABF646D00B85F0A /* CheckInPortal.swift */,
+				155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */,
 				155357502ABF648C00B85F0A /* ChatPortal.swift */,
 			);
 			path = PatientViews;
@@ -126,6 +128,7 @@
 			children = (
 				155357582ABF893F00B85F0A /* ProviderTabView.swift */,
 				BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */,
+				BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */,
 				BA29E6F22ABFB48B004429D3 /* PatientViews */,
 			);
 			path = ProviderViews;
@@ -240,12 +243,12 @@
 				155357412ABF62E700B85F0A /* LoginView.swift in Sources */,
 				BA29E6F62ABFB568004429D3 /* ProviderAppointment.swift in Sources */,
 				155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */,
+				BA29E7062ABFC7CE004429D3 /* ProviderApptBubbleView.swift in Sources */,
 				155357642ABFAEF400B85F0A /* TreatBubbleView.swift in Sources */,
 				1553575D2ABF926C00B85F0A /* Appointment.swift in Sources */,
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
 				BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */,
-				1553574B2ABF645D00B85F0A /* TabViewNav.swift in Sources */,
 				1553575F2ABF953100B85F0A /* ApptDetailView.swift in Sources */,
 				BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */,
 				BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */,
@@ -254,6 +257,7 @@
 				155357592ABF893F00B85F0A /* ProviderTabView.swift in Sources */,
 				1553575B2ABF91EE00B85F0A /* ApptBubbleView.swift in Sources */,
 				155357532ABF6E8C00B85F0A /* LandingPage.swift in Sources */,
+				155357692ABFBD2E00B85F0A /* CheckboxToggleStyle.swift in Sources */,
 				1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

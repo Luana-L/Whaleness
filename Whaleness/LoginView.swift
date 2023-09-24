@@ -22,8 +22,12 @@ struct LoginView: View {
     var isSignInDisabled: Bool { [username, password].contains(where: \.isEmpty) }
 
     var body: some View {
-        if isAuthenticated {
-            TabViewNav()
+        if (isAuthenticated && isPatient) {
+            PatientTabView()
+                .navigationBarBackButtonHidden(true)
+        } else if (isAuthenticated && !isPatient) {
+            ProviderTabView()
+                .navigationBarBackButtonHidden(true)
         } else {
             content
         }
