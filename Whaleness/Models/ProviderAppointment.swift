@@ -16,7 +16,7 @@ struct ProviderAppointment: Identifiable {
 }
 
 extension ProviderAppointment {
-    static var MOCK_APPT: [ProviderAppointment] = [
+    static var MOCK_PROVAPPT: [ProviderAppointment] = [
         ProviderAppointment(date: Date(month: 9, day: 25, year: 2023, hour: 14, minute: 30), location: "Mt. Sinai Morningside", patient: "Finnick Whale"),
         ProviderAppointment(date: Date(month: 10, day: 25, year: 2023, hour: 8, minute: 30), location: "Mt. Sinai Morningside", patient: "Finnie Whale"),
     ]
