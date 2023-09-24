@@ -18,39 +18,31 @@ struct ApptDetailView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                VStack(alignment: .leading, spacing: 5) {
-                    Group {
-                        Text("\(appt.location)")
-                            .font(.system(size: 30, weight: .bold))
-                            .padding(.top, 30)
-                        
-                        Text("Date: \(appt.date, formatter: dateFormatter)")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                            .padding(.bottom, 20)
-                        
-                        Text("Doctor: \(appt.doctor)")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                            .padding(.bottom, 20)
-                        
-                    }
-                    .padding(.horizontal, 25)
+        ZStack {
+            VStack(alignment: .leading, spacing: 5) {
+                Group {
+                    Text("\(appt.location)")
+                        .font(.system(size: 30, weight: .bold))
+                        .padding(.top, 30)
+                    
+                    Text("Date: \(appt.date, formatter: dateFormatter)")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 20)
+                    
+                    Text("Doctor: \(appt.doctor)")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 20)
+                    
                 }
-                Spacer()
+                .padding(.horizontal, 25)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .navigationBarTitle(appt.location)
-            .background(Color("PaleBlue"))
+            Spacer()
         }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Text("") // You can add a button here if needed
-            }
-        }
-        .navigationBarTitleDisplayMode(.inline)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .navigationBarTitle(appt.location)
+        .toolbarColorScheme(.dark, for: .navigationBar)
     }
 }
 
