@@ -26,39 +26,33 @@ struct PatientBubbleView: View {
     var body: some View {
         NavigationLink(destination: PatientRecords(patient: patient)) {
             HStack {
+                Image(patient.imgName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width:50, height:50)
+                    .clipShape(Circle())
+                
+                
                 VStack(alignment: .leading, spacing: 0) {
+                    
+                    Text(patient.name)
+                        .font(Font.custom("Avenir",size:18))
+                    
                     HStack {
                         if let nextAppt = patient.nextAppt {
-                            Text("Date: \(nextAppt, formatter: dateFormatter)")
-                        } else if let lastAppt = patient.lastAppt {
-                            Text("Date: \(lastAppt, formatter: dateFormatter)")
-                        } else {
-                            Text("No appointments")
-                        }
-                        Spacer()
-                        if let lastAppointment = patient.lastAppt {
-                            Text(lastAppointment, formatter: timeFormatter)
-                        }
+                                Text("\(nextAppt, formatter: dateFormatter)")
+                            } else if let lastAppt = patient.lastAppt {
+                                Text("\(lastAppt, formatter: dateFormatter)")
+                            } else {
+                                Text("No appointments")
+                            }
+                            Spacer()
+                    
                     }
                     .font(Font.custom("Avenir",size:15))
                     .foregroundColor(Color("DarkGrey"))
                     
                     
-                    HStack{
-                        Image(patient.imgName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width:20)
-                        Text(patient.name)
-                            .font(Font.custom("Avenir",size:18))
-                    }
-                    
-                    HStack{
-                        Text("View Details")
-                            .font(Font.custom("Avenir",size:18))
-                        Image(systemName: "chevron.right")
-                    }
-                    .foregroundStyle(Color.blue)
                         
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -73,5 +67,5 @@ struct PatientBubbleView: View {
 }
 
 #Preview {
-    PatientBubbleView(patient: Patient.MOCK_PATIENTS[0])
+    PatientBubbleView(patient: Patient.MOCK_PATIENTS[1])
 }

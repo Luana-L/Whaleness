@@ -11,13 +11,14 @@ struct ProviderAppointment: Identifiable {
     let id = UUID()
     var date: Date = Date()
     var location: String
-    var doctor: String
+    var patient: String
     var notes: String?
 }
 
 extension ProviderAppointment {
-    static var MOCK_APPT: [Appointment] = [
-        Appointment(date: Date(month: 9, day: 25, year: 2023, hour: 14, minute: 30), location: "Mt. Sinai Morningside", doctor: "Finnick Whale"),
-        Appointment(date: Date(month: 10, day: 25, year: 2023, hour: 8, minute: 30), location: "Mt. Sinai Morningside", doctor: "Finnie Whale"),
+    static var MOCK_APPT: [ProviderAppointment] = [
+        ProviderAppointment(date: Date(month: 9, day: 25, year: 2023, hour: 14, minute: 30), location: "Mt. Sinai Morningside", patient: "Finnick Whale"),
+        ProviderAppointment(date: Date(month: 10, day: 25, year: 2023, hour: 8, minute: 30), location: "Mt. Sinai Morningside", patient: "Finnie Whale"),
     ]
 }
+

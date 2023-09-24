@@ -47,6 +47,6 @@ struct HomePortalProvider: View {
 
 struct HomePortalProvider_Previews: PreviewProvider {
     static var previews: some View {
-        HomePortal()
+        HomePortalProvider()
     }
 }
