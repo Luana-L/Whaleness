@@ -36,7 +36,8 @@ struct PatientBubbleView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     
                     Text(patient.name)
-                        .font(Font.custom("Avenir",size:18))
+                        .font(Font.custom("Avenir",size:20))
+                        .foregroundColor(Color("DarkBlue"))
                     
                     HStack {
                         if let nextAppt = patient.nextAppt {
