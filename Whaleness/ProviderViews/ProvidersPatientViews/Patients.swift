@@ -24,7 +24,7 @@ struct Patients: View {
             }
         }
         
-        .padding(.horizontal, 25)
+        .padding(.horizontal, 20)
     }
 }
 

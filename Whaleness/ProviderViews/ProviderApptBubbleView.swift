@@ -35,6 +35,7 @@ struct ProviderApptBubbleView: View {
                         Spacer()
                         Text(provapptment.date, formatter: timeFormatter)
                             .foregroundColor(.secondary)
+                            .font(.subheadline)
                     }
                     
                     
@@ -49,6 +50,7 @@ struct ProviderApptBubbleView: View {
                             .font(Font.custom("Avenir",size:15))
                             .foregroundColor(.secondary)
                         Image(systemName: "chevron.right")
+                            .foregroundColor(.secondary)
                     }
                         
                 }

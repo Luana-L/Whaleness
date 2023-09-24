@@ -13,7 +13,7 @@ struct HomePortal: View {
             VStack(alignment: .leading){
                 HStack{
                     Text("Welcome Finley!")
-                        .font(Font.custom("Avenir-Medium", size: 30))
+                        .font(Font.custom("Avenir", size: 30))
                         .foregroundStyle(Color("DarkBlue"))
                     Spacer()
                 }
@@ -32,7 +32,7 @@ struct HomePortal: View {
                 HStack {
                     Spacer()
                     Text("View past appointment records")
-                        .font(Font.custom("Avenir", size: 20))
+                        .font(Font.custom("Avenir", size: 18))
                         .foregroundStyle(Color.blue)
                 }
                 .padding(.trailing, 20)

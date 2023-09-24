@@ -25,7 +25,7 @@ struct ApptBubbleView: View {
     var body: some View {
         NavigationLink(destination: ApptDetailView(appt: apptment)) {
             HStack {
-                VStack(alignment: .leading, spacing: 0) {
+                VStack(alignment: .leading, spacing: 5) {
                     HStack {
                         Text("Date: \(apptment.date, formatter: dateFormatter)")
                         Spacer()
@@ -40,7 +40,7 @@ struct ApptBubbleView: View {
                         .bold()
                     HStack{
                         Text("View Details")
-                            .font(Font.custom("Avenir",size:18))
+                            .font(Font.custom("Avenir",size:15))
                         Image(systemName: "chevron.right")
                     }
                     .foregroundStyle(Color.blue)

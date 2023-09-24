@@ -23,6 +23,7 @@ struct TreatBubbleView: View {
                                 .truncationMode(.tail)
                         }
                         .foregroundStyle(Color("DarkGrey"))
+                        .font(Font.custom("Avenir", size: 15))
                     }
                 }
                 .padding(5)
