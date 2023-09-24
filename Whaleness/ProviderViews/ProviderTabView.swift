@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ProviderTabView: View {
+    @Binding var isAuthenticated: Bool
+    
     var body: some View {
         TabView {
             Group{
-                HomePortalProvider()
+                HomePortalProvider(isAuthenticated: $isAuthenticated)
                     .tabItem {
                         Label("Home", systemImage: "house")
                         Text("Home")
@@ -36,5 +38,5 @@ struct ProviderTabView: View {
 }
 
 #Preview {
-    ProviderTabView()
+    ProviderTabView(isAuthenticated: .constant(true))
 }

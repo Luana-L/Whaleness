@@ -16,10 +16,10 @@ struct LoginView: View {
 
     var body: some View {
         if (isAuthenticated && isPatient) {
-            PatientTabView()
+            PatientTabView(isAuthenticated: $isAuthenticated)
                 .navigationBarBackButtonHidden(true)
         } else if (isAuthenticated && !isPatient) {
-            ProviderTabView()
+            ProviderTabView(isAuthenticated: $isAuthenticated)
                 .navigationBarBackButtonHidden(true)
         } else {
             content
