@@ -13,6 +13,8 @@ struct HomePortal: View {
                     }
                     .padding(.leading, 20)
                     .padding(.vertical, 10)
+                    
+                        
                     Text("Upcoming appointments...")
                         .padding(.leading, 20)
                         .font(Font.custom("Avenir", size: 20))
@@ -20,17 +22,8 @@ struct HomePortal: View {
                         ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date! < $1.date! }).prefix(3)) { appt in
                             ApptBubbleView(apptment: appt)
                         }
-                        .padding(.leading, 20)
-                        .padding(.vertical, 10)
-                        Text("Upcoming appointments...")
-                            .padding(.leading, 20)
-                            .font(Font.custom("Avenir", size: 20))
-                        VStack(spacing: 10) {
-                            ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date! < $1.date! }).prefix(3)) { appt in
-                                ApptBubbleView(apptment: appt)
-                            }
-                        }
-                        .padding(.horizontal, 20)
+                    }
+                    .padding(.horizontal, 20)
                         
                         HStack {
                             Spacer()
@@ -48,7 +41,6 @@ struct HomePortal: View {
                             ForEach(Treatment.MOCK_TREAT) { treat in
                                 TreatBubbleView(treatment: treat)
                             }
-                        }
                         .padding(.horizontal, 20)
                         
                         HStack {
