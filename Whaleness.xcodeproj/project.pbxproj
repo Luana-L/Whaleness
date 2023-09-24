@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		152D9B592ABFDFD800778FCC /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 152D9B582ABFDFD800778FCC /* ParseSwift */; };
 		1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */; };
 		155357122ABF5CA000B85F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357112ABF5CA000B85F0A /* Assets.xcassets */; };
 		155357152ABF5CA000B85F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357142ABF5CA000B85F0A /* Preview Assets.xcassets */; };
@@ -67,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152D9B592ABFDFD800778FCC /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +183,6 @@
 			dependencies = (
 			);
 			name = Whaleness;
-			packageProductDependencies = (
-				152D9B582ABFDFD800778FCC /* ParseSwift */,
-			);
 			productName = Whaleness;
 			productReference = 1553570A2ABF5C9E00B85F0A /* Whaleness.app */;
 			productType = "com.apple.product-type.application";
@@ -216,9 +211,6 @@
 				Base,
 			);
 			mainGroup = 155357012ABF5C9E00B85F0A;
-			packageReferences = (
-				152D9B572ABFDFD800778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */,
-			);
 			productRefGroup = 1553570B2ABF5C9E00B85F0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -472,25 +464,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		152D9B572ABFDFD800778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/parse-community/Parse-Swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.14.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		152D9B582ABFDFD800778FCC /* ParseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 152D9B572ABFDFD800778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */;
-			productName = ParseSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 155357022ABF5C9E00B85F0A /* Project object */;
 }
