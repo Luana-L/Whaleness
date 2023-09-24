@@ -5,6 +5,7 @@
 //  Created by Luana Liao on 6/20/23.
 //
 
+import Foundation
 import SwiftUI
 
 struct ChatPortal: View {
@@ -78,8 +79,60 @@ struct ChatPortal: View {
         let userMessage = Message(text: userInput, isUser: true)
         chatMessages.append(userMessage)
         
+        getChatGPTResponse(userMessage: userInput) { response in
+                if let response = response {
+                    let botMessage = Message(text: response, isUser: false)
+                    chatMessages.append(botMessage)
+                } else {
+                    print("Error: Unable to get a valid response from the API.")
+                }
+            }
+        let botMessage = Message(text: "ChatGPT response here...", isUser: false)
+        chatMessages.append(botMessage)
+        
         userInput = ""
     }
+    func getChatGPTResponse(userMessage: String, completion: @escaping (String?) -> Void) {
+        let apiKey = "API_KEY"
+        let endpoint = "https://api.openai.com/v1/engines/davinci-codex/completions"
+        
+        var request = URLRequest(url: URL(string: endpoint)!)
+        request.httpMethod = "POST"
+        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        
+        let params: [String: Any] = [
+            "prompt": userMessage,
+            "max_tokens": 50 // Adjust the response length as needed
+        ]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: params)
+        } catch {
+            completion(nil)
+            return
+        }
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                completion(nil)
+                return
+            }
+            
+            if let response = try? JSONDecoder().decode(GPTResponse.self, from: data) {
+                completion(response.choices.first?.text)
+            } else {
+                completion(nil)
+            }
+        }.resume()
+    }
+}
+
+struct GPTResponse: Codable {
+    let choices: [Choice]
+}
+
+struct Choice: Codable {
+    let text: String
 }
 
 struct ChatPortal_Previews: PreviewProvider {

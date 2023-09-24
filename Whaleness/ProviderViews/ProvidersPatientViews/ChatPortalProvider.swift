@@ -77,6 +77,9 @@ struct ChatPortalProvider: View {
         let userMessage = Message(text: userInput, isUser: true)
         chatMessages.append(userMessage)
         
+        let botMessage = Message(text: "User response here...", isUser: false)
+        chatMessages.append(botMessage)
+        
         userInput = ""
     }
 }
