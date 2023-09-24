@@ -11,21 +11,23 @@ struct ProviderTabView: View {
     var body: some View {
         TabView {
             Group{
-                HomePortal()
+                HomePortalProvider()
                     .tabItem {
                         Label("Home", systemImage: "house")
                         Text("Home")
                     }
-                CheckInPortal()
+                Patients()
                     .tabItem {
-                        Label("Check In", systemImage: "heart.text.square.fill")
+                        Label("Check In", systemImage: "person.fill.turn.left")
                         Text("Check In")
                     }
-                ChatPortal()
+                /*
+                ChatPortalProvider()
                     .tabItem {
                         Label("Chat", systemImage: "bubble.left.and.bubble.right")
                         Text("Chat")
                     }
+                 */
             }
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(Color("DarkBlue"), for: .tabBar)
