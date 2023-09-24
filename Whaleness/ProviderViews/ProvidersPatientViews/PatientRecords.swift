@@ -62,7 +62,7 @@ struct PatientRecords: View {
                 Spacer()
                 NavigationLink(destination: PatientTreatment(patient: patient)) {
                     Text("View treatment plan")
-                        .font(Font.custom("Avenir", size: 15))
+                        .font(Font.custom("Avenir", size: 18))
                         .foregroundStyle(Color.blue)
                 }
             }

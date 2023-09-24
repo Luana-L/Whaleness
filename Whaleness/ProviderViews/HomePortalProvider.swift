@@ -35,6 +35,18 @@ struct HomePortalProvider: View {
                         .font(Font.custom("Avenir", size: 15))
                         .foregroundStyle(Color.blue)
                 }
+                .padding(.horizontal,20)
+                
+                HStack {
+                    NavigationLink(destination: LandingPage()) {
+                        Text("Logout")
+                            .font(Font.custom("Avenir", size: 18))
+                            .foregroundStyle(Color.blue)
+                    }
+                    Spacer()
+                }
+                .padding(.horizontal,20)
+                
                 .padding(.trailing, 20)
                 .padding(.bottom, 20)
                 
