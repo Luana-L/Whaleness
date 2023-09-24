@@ -163,6 +163,7 @@ struct CheckInPortal: View {
                     .padding(.horizontal, 20)
                     .background(Color("LightGrey"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .padding(.horizontal)
                     
                     Text("Medication")
                         .padding(.horizontal, 20)
@@ -200,6 +201,7 @@ struct CheckInPortal: View {
                     .padding(.horizontal, 20)
                     .background(Color("LightGrey"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .padding(.horizontal)
                     
                     NavigationLink(destination: CheckInSubmit()) {
                             Text("Submit")
@@ -208,6 +210,7 @@ struct CheckInPortal: View {
                                 .background(Color("DarkBlue"))
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .font(Font.custom("Avenir", size:15))
+                                .padding(.bottom)
                         
                     }
                     
