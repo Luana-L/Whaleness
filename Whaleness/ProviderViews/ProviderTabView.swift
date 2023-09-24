@@ -21,13 +21,12 @@ struct ProviderTabView: View {
                         Label("Patients", systemImage: "person.crop.rectangle.stack.fill")
                         Text("Check In")
                     }
-                /*
+                
                 ChatPortalProvider()
                     .tabItem {
                         Label("Chat", systemImage: "bubble.left.and.bubble.right")
                         Text("Chat")
                     }
-                 */
             }
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(Color("DarkBlue"), for: .tabBar)

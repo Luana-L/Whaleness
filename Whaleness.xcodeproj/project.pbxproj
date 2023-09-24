@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152D9B5C2AC0770F00778FCC /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 152D9B5B2AC0770F00778FCC /* ParseSwift */; };
 		1553570E2ABF5C9E00B85F0A /* WhalenessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553570D2ABF5C9E00B85F0A /* WhalenessApp.swift */; };
 		155357122ABF5CA000B85F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357112ABF5CA000B85F0A /* Assets.xcassets */; };
 		155357152ABF5CA000B85F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155357142ABF5CA000B85F0A /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357662ABFAF5B00B85F0A /* TreatDetailView.swift */; };
 		155357692ABFBD2E00B85F0A /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */; };
 		38443A5A2ABFFAAD00FC94E1 /* PatientTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */; };
+		38DA50472AC07CBA000C461E /* ChatPortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */; };
 		BA29E6F62ABFB568004429D3 /* ProviderAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */; };
 		BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */; };
 		BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F92ABFB6F1004429D3 /* Patients.swift */; };
@@ -57,6 +59,7 @@
 		155357662ABFAF5B00B85F0A /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
 		155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTreatment.swift; sourceTree = "<group>"; };
+		38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatPortalProvider.swift; path = Whaleness/ProviderViews/ProvidersPatientViews/ChatPortalProvider.swift; sourceTree = SOURCE_ROOT; };
 		BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderAppointment.swift; sourceTree = "<group>"; };
 		BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePortalProvider.swift; sourceTree = "<group>"; };
 		BA29E6F92ABFB6F1004429D3 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152D9B5C2AC0770F00778FCC /* ParseSwift in Frameworks */,
 				C58C7A6D2ABFDB74006B9BA2 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +178,7 @@
 				BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */,
 				BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */,
 				38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */,
+				38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */,
 			);
 			path = ProvidersPatientViews;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			name = Whaleness;
 			packageProductDependencies = (
 				C58C7A6C2ABFDB74006B9BA2 /* OpenAI */,
+				152D9B5B2AC0770F00778FCC /* ParseSwift */,
 			);
 			productName = Whaleness;
 			productReference = 1553570A2ABF5C9E00B85F0A /* Whaleness.app */;
@@ -227,6 +233,7 @@
 			mainGroup = 155357012ABF5C9E00B85F0A;
 			packageReferences = (
 				C58C7A6B2ABFDB74006B9BA2 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				152D9B5A2AC0770F00778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			productRefGroup = 1553570B2ABF5C9E00B85F0A /* Products */;
 			projectDirPath = "";
@@ -267,6 +274,7 @@
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
 				BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */,
+				38DA50472AC07CBA000C461E /* ChatPortalProvider.swift in Sources */,
 				1553575F2ABF953100B85F0A /* ApptDetailView.swift in Sources */,
 				BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */,
 				BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */,
@@ -486,6 +494,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		152D9B5A2AC0770F00778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
 		C58C7A6B2ABFDB74006B9BA2 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MacPaw/OpenAI";
@@ -497,6 +513,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		152D9B5B2AC0770F00778FCC /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 152D9B5A2AC0770F00778FCC /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
 		C58C7A6C2ABFDB74006B9BA2 /* OpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C58C7A6B2ABFDB74006B9BA2 /* XCRemoteSwiftPackageReference "OpenAI" */;
