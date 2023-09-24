@@ -111,6 +111,7 @@ struct CheckInPortal: View {
                                         if index == symptoms.count - 1 {
                                             TextField("Add custom symptom", text: $newSymptom)
                                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                                .font(Font.custom("Avenir", size: 20))
                                             Spacer()
                                             
                                             Button(action: {
@@ -122,7 +123,7 @@ struct CheckInPortal: View {
                                             }) {
                                                 Image(systemName: "plus.circle.fill")
                                                     .foregroundColor(.blue)
-                                                    .font(.system(size: 20))
+                                                    .font(.system(size: 15))
                                             }
                                         } else {
                                             Spacer()

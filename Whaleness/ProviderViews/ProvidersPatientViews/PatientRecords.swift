@@ -60,29 +60,33 @@ struct PatientRecords: View {
             }
             HStack {
                 Spacer()
-                Text("View more")
-                    .font(Font.custom("Avenir", size: 15))
-                    .foregroundStyle(Color.blue)
+                NavigationLink(destination: PatientTreatment(patient: patient)) {
+                    Text("View treatment plan")
+                        .font(Font.custom("Avenir", size: 15))
+                        .foregroundStyle(Color.blue)
+                }
             }
-                
+            
             VStack(alignment: .leading, spacing: 10) {
-                Text("Medication")
+                Text("Patient Records")
                     .font(Font.custom("Avenir", size:20))
                     .foregroundColor(Color("DarkGrey"))
                 VStack(alignment: .leading, spacing: 10) {
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("Penicillin")
-                            .font(Font.custom("Avenir", size:15))
+                        Text("September 13, 2023")
+                        Text("September 6, 2023")
                     }
+                .font(Font.custom("Avenir", size:15))
                 .foregroundStyle(Color("DarkGrey"))
                 .frame(maxWidth: .infinity, alignment: .leading)
+                    
                 }
-                
             .padding(.vertical, 10)
             .padding(.horizontal)
             .background(Color("LightGrey"))
             .clipShape(RoundedRectangle(cornerRadius: 20))
             }
+            
                 
         }
         .padding(.horizontal, 25)
