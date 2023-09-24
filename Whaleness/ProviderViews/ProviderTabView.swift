@@ -18,7 +18,7 @@ struct ProviderTabView: View {
                     }
                 Patients()
                     .tabItem {
-                        Label("Check In", systemImage: "person.fill.turn.left")
+                        Label("Check In", systemImage: "person.crop.rectangle.stack.fill")
                         Text("Check In")
                     }
                 /*
