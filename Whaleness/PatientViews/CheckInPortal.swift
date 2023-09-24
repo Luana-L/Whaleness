@@ -43,7 +43,7 @@ struct CheckInPortal: View {
             VStack(alignment: .leading){
                 HStack{
                     Text("Daily Check-in")
-                        .font(Font.custom("Avenir-Medium", size: 25))
+                        .font(Font.custom("Avenir", size: 30))
                         .foregroundStyle(Color("DarkBlue"))
                     Spacer()
                 }
@@ -101,7 +101,7 @@ struct CheckInPortal: View {
                 Text("Symptoms")
                     .padding(.leading, 20)
                     .font(Font.custom("Avenir", size: 20))
-                HStack(alignment: .top, spacing: 10) {
+                HStack(alignment: .top, spacing: 10) { // not padded??
                     VStack(alignment: .leading, spacing: 10) {
                         ForEach(symptoms.indices, id: \.self) { index in
                             HStack(alignment: .top, spacing: 10) {
@@ -123,7 +123,7 @@ struct CheckInPortal: View {
                                             }) {
                                                 Image(systemName: "plus.circle.fill")
                                                     .foregroundColor(.blue)
-                                                    .font(.system(size: 15))
+                                                    .font(.system(size: 20))
                                             }
                                         } else {
                                             Spacer()
@@ -149,22 +149,23 @@ struct CheckInPortal: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .padding(.vertical, 10)
-                .padding(.horizontal)
+                .padding(.horizontal, 20)
                 .background(Color("LightGrey"))
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             }
             
             Text("Medication")
                 .font(Font.custom("Avenir", size: 20))
+            // add text box here
             
             VStack{
                 Text("\(day, formatter: dateFormatter)")
+                    .font(Font.custom("Avenir", size:15))
             }
             .padding(.vertical, 10)
-            .padding(.horizontal)
+            .padding(.horizontal, 20)
             .background(Color("LightGrey"))
             .clipShape(RoundedRectangle(cornerRadius: 20))
-            .padding(.horizontal, 20)
             
             
             Button {submit = true} label: {
@@ -173,6 +174,7 @@ struct CheckInPortal: View {
                     .foregroundColor(.white)
                     .background(Color("DarkBlue"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .font(Font.custom("Avenir", size:15))
                     
 
             }
