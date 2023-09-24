@@ -29,37 +29,37 @@ struct PatientTreatment: View {
             
             PatientBubbleView(patient: patient)
             
-            HStack {
-                Image(systemName: "message.fill")
-                Text("Send message") // this would navigate to chatbot
-                    .font(Font.custom("AvenirNext-Bold", size:15))
+            NavigationLink(destination: ChatPortalProvider()) {
+                HStack {
+                    Image(systemName: "message.fill")
+                    Text("Send message") // this would navigate to chatbot
+                        .font(Font.custom("AvenirNext-Bold", size:15))
+                }
+                .foregroundStyle(Color("DarkBlue"))
             }
-            .foregroundStyle(Color("DarkBlue"))
+            
+            Text("Treatment Instructions")
+                .font(Font.custom("Avenir", size:20))
+                .foregroundStyle(Color("DarkGrey"))
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Report symptoms daily\nTake 775mg of penicillin daily")
+                    .font(Font.custom("Avenir", size:15))
+            .foregroundStyle(Color("DarkGrey"))
+            .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.vertical, 10)
+            .padding(.horizontal)
+            .background(Color("LightGrey"))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
             
             Text("Currently Tracking")
                 .font(Font.custom("Avenir", size:20))
                 .foregroundStyle(Color("DarkGrey"))
             VStack(spacing: 10) {
-                VStack(spacing: 5) {
-                    Text("• Fever")
-                        .font(Font.custom("Avenir", size:15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                VStack(spacing: 5) {
-                    Text("• Nausea")
-                        .font(Font.custom("Avenir", size:15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                VStack(spacing: 5) {
-                    Text("• Slurred speech")
-                        .font(Font.custom("Avenir", size:15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                VStack(spacing: 5) {
-                    Text("• Muscle pain")
-                        .font(Font.custom("Avenir", size:15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
+                Text("• Fever\n• Nausea\n• Slurred speech\n• Muscle pain")
+                    .font(Font.custom("Avenir", size:15))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+    
                 HStack(alignment: .top, spacing: 10) {
                     TextField("Add custom treatment", text: $newTreatment)
                         .textFieldStyle(RoundedBorderTextFieldStyle())

@@ -18,7 +18,7 @@ struct ChatPortalProvider: View {
             VStack (alignment: .leading){
                 HStack{
                     Text("Chatbot")
-                        .font(Font.custom("Avenir-Medium", size: 25))
+                        .font(Font.custom("Avenir-Medium", size: 30))
                         .foregroundStyle(Color("DarkBlue"))
                         .padding(.vertical, 10)
                         .padding(.horizontal, 20)
