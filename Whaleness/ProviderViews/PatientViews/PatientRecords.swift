@@ -15,7 +15,7 @@ struct PatientRecords: View {
             PatientBubbleView(patient: patient)
             
             VStack {
-                HStack(alignment: .top, spacing: 10) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text("RISK ALERT: SEPSIS")
                         .font(Font.custom("Avenir-Bold", size:20))
                         .foregroundStyle(Color.red)
@@ -24,12 +24,12 @@ struct PatientRecords: View {
                     .padding(5)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                HStack(alignment: .top, spacing: 10) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text("VITALS")
                         .font(Font.custom("Avenir-Bold", size:20))
                         .foregroundColor(Color("DarkGrey"))
                     VStack(alignment: .leading, spacing: 10) {
-                        HStack(alignment: .top, spacing: 5) {
+                        VStack(alignment: .leading, spacing: 5) {
                             Text("Blood pressure - low")
                             Text("Blood oxygen - low")
                             Text("Temperature - normal")
