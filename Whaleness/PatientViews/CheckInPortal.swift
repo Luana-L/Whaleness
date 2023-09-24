@@ -4,8 +4,8 @@ import SwiftUI
 
 
 struct CheckInInstance {
-    var symptom: Symptom
-    var med: Med
+    var symptom: [Symptom] = []
+    var med: [Med] = []
     var date: Date
     var pain: Int
 }
@@ -33,7 +33,7 @@ var timeFormatter: DateFormatter {
 }
 
 struct CheckInPortal: View {
-    @State private var checkInList: [Symptom] = []
+    @State private var checkInList: [CheckInInstance] = []
     
     @State private var painLevel = 0
     @State private var symptoms = [ Symptom(name: "Fever"), Symptom(name: "Nausea"), Symptom(name: "Slurred speech"), Symptom(name: "Muscle pain"),
@@ -204,6 +204,7 @@ struct CheckInPortal: View {
                     
                     NavigationLink(destination: CheckInSubmit()) {
                         Button {
+                            checkInList.append(CheckInInstance(symptom: symptoms, med: medicines, date: day, pain: painLevel))
                             print("Success")
                         } label: {
                             Text("Submit")
