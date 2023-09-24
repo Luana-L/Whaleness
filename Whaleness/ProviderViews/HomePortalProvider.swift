@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct HomePortalProvider: View {
+    @Binding var isAuthenticated: Bool
+    
     var body: some View {
+        if (isAuthenticated) {
+            content
+        } else {
+            LandingPage()
+        }
+    }
+    
+    var content: some View {
         NavigationStack {
             VStack(alignment: .leading){
                 HStack{
@@ -63,8 +73,22 @@ struct HomePortalProvider: View {
                     )
                     Spacer()
                 }
-                .offset(y: 40)
+                .padding(.top, 50)
                 
+                HStack {
+                    Spacer()
+                    Button { isAuthenticated = false } label: {
+                        Text("Logout")
+                            .font(Font.custom("Avenir", size: 18))
+                            .padding(5)
+                            .padding(.horizontal, 10)
+                            .background(Color("DarkBlue"))
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .foregroundStyle(Color.white)
+                    }
+                    Spacer()
+                }
+                .padding(10)
             }
             
             .background(Color("OffWhite"))
@@ -74,6 +98,6 @@ struct HomePortalProvider: View {
 
 struct HomePortalProvider_Previews: PreviewProvider {
     static var previews: some View {
-        HomePortalProvider()
+        HomePortalProvider(isAuthenticated: .constant(true))
     }
 }

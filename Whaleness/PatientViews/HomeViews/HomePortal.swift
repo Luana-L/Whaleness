@@ -1,7 +1,17 @@
 import SwiftUI
 
 struct HomePortal: View {
+    @Binding var isAuthenticated: Bool
+    
     var body: some View {
+        if (isAuthenticated) {
+            content
+        } else {
+            LandingPage()
+        }
+    }
+    
+    var content: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading){
@@ -51,20 +61,15 @@ struct HomePortal: View {
                         }
                         .padding(.horizontal,20)
                         
-                        HStack {
-                            NavigationLink(destination: LandingPage()) {
+                        Button { isAuthenticated = false } label: {
                                 Text("Logout")
                                     .font(Font.custom("Avenir", size: 18))
-                                    .foregroundStyle(Color.blue)
-                                //loggedIn = false
-                            }
-                            Spacer()
+                                    .padding(5)
+                                    .padding(.horizontal, 10)
+                                    .background(Color("DarkBlue"))
+                                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                                    .foregroundStyle(Color.white)
                         }
-                        .padding(.horizontal,20)
-                        
-                        
-                        .padding(.trailing, 20)
-                        .padding(.bottom, 20)
                     }
                     
                     .background(Color("OffWhite"))
@@ -76,6 +81,6 @@ struct HomePortal: View {
 
 struct HomePortal_Previews: PreviewProvider {
     static var previews: some View {
-        HomePortal()
+        HomePortal(isAuthenticated: .constant(true))
     }
 }

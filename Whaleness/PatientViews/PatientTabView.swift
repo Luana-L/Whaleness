@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct PatientTabView: View {
+    @Binding var isAuthenticated: Bool
     var body: some View {
         TabView {
             Group{
-                HomePortal()
+                HomePortal(isAuthenticated: $isAuthenticated)
                     .tabItem {
                         Label("Home", systemImage: "house")
                         Text("Home")
@@ -36,5 +37,5 @@ struct PatientTabView: View {
 }
 
 #Preview {
-    PatientTabView()
+    PatientTabView(isAuthenticated: .constant(true))
 }
