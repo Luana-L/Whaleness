@@ -201,20 +201,14 @@ struct CheckInPortal: View {
                     .background(Color("LightGrey"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     
-                    
                     NavigationLink(destination: CheckInSubmit()) {
-                        Button {
-                            checkInList.append(CheckInInstance(symptom: symptoms, med: medicines, date: day, pain: painLevel))
-                            print("Success")
-                        } label: {
                             Text("Submit")
                                 .padding(.horizontal)
                                 .foregroundColor(.white)
                                 .background(Color("DarkBlue"))
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .font(Font.custom("Avenir", size:15))
-                            
-                        }
+                        
                     }
                     
                 }
