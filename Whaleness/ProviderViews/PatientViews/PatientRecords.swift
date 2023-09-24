@@ -11,7 +11,52 @@ struct PatientRecords: View {
     var patient: Patient
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment:.leading, spacing: 10) {
+            PatientBubbleView(patient: patient)
+            
+            VStack {
+                HStack(alignment: .top, spacing: 10) {
+                    Text("RISK ALERT: SEPSIS")
+                        .font(Font.custom("Avenir-Bold", size:20))
+                        .foregroundStyle(Color.red)
+                    Text("Finley reported feeling nausea and slurred speech in the last two days.")
+                        .font(Font.custom("Avenir-Bold", size:20))
+                    .padding(5)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                HStack(alignment: .top, spacing: 10) {
+                    Text("VITALS")
+                        .font(Font.custom("Avenir-Bold", size:20))
+                        .foregroundColor(Color("DarkGrey"))
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack(alignment: .top, spacing: 5) {
+                            Text("Blood pressure - low")
+                            Text("Blood oxygen - low")
+                            Text("Temperature - normal")
+                        }
+                        .foregroundStyle(Color("DarkGrey"))
+                        Spacer()
+                    }
+                    .padding(5)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                
+                .padding(.vertical, 10)
+                .padding(.horizontal)
+                .background(Color("LightGrey"))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .padding(.horizontal, 20)
+                Spacer()
+            }
+            
+            .padding(.vertical, 10)
+            .padding(.horizontal)
+            .background(Color("LightGrey"))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .lineLimit(1)
+            .truncationMode(.tail)
+        }
+        
     }
 }
 
