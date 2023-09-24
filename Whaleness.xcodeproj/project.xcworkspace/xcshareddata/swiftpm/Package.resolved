@@ -8,6 +8,15 @@
         "revision" : "c45f3320ffa760f043c0239f724850c0e4f8bde5",
         "version" : "0.2.4"
       }
+    },
+    {
+      "identity" : "parse-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/parse-community/Parse-Swift",
+      "state" : {
+        "revision" : "dc7666f774755be333f48f25c4d8bead0a1a6877",
+        "version" : "4.14.2"
+      }
     }
   ],
   "version" : 2
