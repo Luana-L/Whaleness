@@ -35,20 +35,22 @@ struct ProviderApptBubbleView: View {
                         Spacer()
                         Text(provapptment.date, formatter: timeFormatter)
                             .foregroundColor(.secondary)
+                            .font(.subheadline)
                     }
                     
                     
                     Text(provapptment.patient)
-                        .font(Font.custom("Avenir",size:30))
+                        .font(Font.custom("Avenir",size:20))
                         .font(.subheadline)
-                        .foregroundColor(.primary)
+                        .foregroundColor(Color("DarkBlue"))
                     
                 
                     HStack{
                         Text("View Details")
-                            .font(Font.custom("Avenir",size:18))
+                            .font(Font.custom("Avenir",size:15))
                             .foregroundColor(.secondary)
                         Image(systemName: "chevron.right")
+                            .foregroundColor(.secondary)
                     }
                         
                 }

@@ -32,7 +32,7 @@ struct ProviderTabView: View {
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(Color("DarkBlue"), for: .tabBar)
         }
-        
+        .accentColor(Color("OffWhite"))
     }
 }
 

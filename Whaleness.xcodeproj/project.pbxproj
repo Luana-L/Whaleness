@@ -23,7 +23,6 @@
 		155357622ABFACED00B85F0A /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357612ABFACED00B85F0A /* Treatment.swift */; };
 		155357642ABFAEF400B85F0A /* TreatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357632ABFAEF400B85F0A /* TreatBubbleView.swift */; };
 		155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357662ABFAF5B00B85F0A /* TreatDetailView.swift */; };
-		C58C7A6D2ABFDB74006B9BA2 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C58C7A6C2ABFDB74006B9BA2 /* OpenAI */; };
 		155357692ABFBD2E00B85F0A /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */; };
 		BA29E6F62ABFB568004429D3 /* ProviderAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */; };
 		BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */; };
@@ -33,6 +32,7 @@
 		BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */; };
 		BA29E7062ABFC7CE004429D3 /* ProviderApptBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */; };
 		BA29E70A2ABFD935004429D3 /* ProviderApptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7092ABFD935004429D3 /* ProviderApptDetailView.swift */; };
+		C58C7A6D2ABFDB74006B9BA2 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C58C7A6C2ABFDB74006B9BA2 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -404,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Whaleness/Preview Content\"";
-				DEVELOPMENT_TEAM = JW5745B6M3;
+				DEVELOPMENT_TEAM = 7J29978Z7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -417,7 +417,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DivHacks.Whaleness;
+				PRODUCT_BUNDLE_IDENTIFIER = DivHacks.Whaleness12344534;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Whaleness/Preview Content\"";
-				DEVELOPMENT_TEAM = JW5745B6M3;
+				DEVELOPMENT_TEAM = 7J29978Z7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DivHacks.Whaleness;
+				PRODUCT_BUNDLE_IDENTIFIER = DivHacks.Whaleness12344534;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
