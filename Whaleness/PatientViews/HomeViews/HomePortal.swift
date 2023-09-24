@@ -1,10 +1,3 @@
-//
-//  Admin.swift
-//  Pro-G
-//
-//  Created by Luana Liao on 6/26/23.
-//
-
 import SwiftUI
 
 struct HomePortal: View {

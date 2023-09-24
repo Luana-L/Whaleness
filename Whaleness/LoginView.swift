@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Pro-G
-//
-//  Created by Luana Liao on 6/16/23.
-//
-
 import SwiftUI
 
 struct LoginView: View {
@@ -17,7 +10,6 @@ struct LoginView: View {
     @State private var password = ""
     @State private var showPassword = false
     @State private var isAuthenticated = false
-    //@State var loggedIn = false
     
     //disable sign-in button if either username or pass left empty
     var isSignInDisabled: Bool { [username, password].contains(where: \.isEmpty) }
