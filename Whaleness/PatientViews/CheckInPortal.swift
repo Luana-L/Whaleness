@@ -30,12 +30,10 @@ struct CheckInPortal: View {
     ]
     @State private var newSymptom = ""
 
-    @State private var submit: Bool = false
     
     @State private var medicines = [ Med(name: "Penicillin"), Med(name: "Vitamin C")]
     
     @State private var day = Date()
-    
     
     
     var body: some View {
@@ -152,54 +150,63 @@ struct CheckInPortal: View {
                 .padding(.horizontal, 20)
                 .background(Color("LightGrey"))
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-            }
-            
-            Text("Medication")
-                .font(Font.custom("Avenir", size: 20))
-            HStack(alignment: .top, spacing: 10) { // not padded??
-                VStack(alignment: .leading, spacing: 10) {
-                    ForEach(medicines.indices, id: \.self) { index in
-                        HStack(alignment: .top, spacing: 10) {
-                            Toggle(isOn: $medicines[index].isChecked) {
-                                Text(medicines[index].name)
-                                    .padding(5)
+                
+                Text("Medication")
+                    .padding(.horizontal, 20)
+                    .font(Font.custom("Avenir", size: 20))
+                
+                HStack(alignment: .top, spacing: 10) {
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("\(day, formatter: dateFormatter)")
+                            .font(Font.custom("Avenir", size:15))
+                        
+                        ForEach(medicines.indices, id: \.self) { index in
+                            HStack(alignment: .top, spacing: 10) {
+                                Toggle(isOn: $medicines[index].isChecked) {
+                                    Text(medicines[index].name)
+                                        .padding(5)
+                                }
+                                .toggleStyle(CheckboxToggleStyle())
+                                
                             }
-                            .toggleStyle(CheckboxToggleStyle())
-                            
+                            .foregroundStyle(Color("DarkGrey"))
                         }
-                        .foregroundStyle(Color("DarkGrey"))
+                        
+                        HStack {
+                            Spacer()
+                            Text("View past appointment records")
+                                .font(Font.custom("Avenir", size: 18))
+                                .foregroundStyle(Color.blue)
+                        }
                     }
+                    .padding(5)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
+                .background(Color("LightGrey"))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                     
                 }
-                .padding(5)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            }
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
-            .background(Color("LightGrey"))
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            
-            VStack{
-                Text("\(day, formatter: dateFormatter)")
-                    .font(Font.custom("Avenir", size:15))
-            }
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
-            .background(Color("LightGrey"))
-            .clipShape(RoundedRectangle(cornerRadius: 20))
             
             
-            Button {submit = true} label: {
-                Text("Submit")
-                    .padding(.horizontal)
-                    .foregroundColor(.white)
-                    .background(Color("DarkBlue"))
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .font(Font.custom("Avenir", size:15))
-                
-                
+            NavigationLink(destination: CheckInSubmit()) {
+                Button {} label: {
+                    Text("Submit")
+                        .padding(.horizontal)
+                        .foregroundColor(.white)
+                        .background(Color("DarkBlue"))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .font(Font.custom("Avenir", size:15))
+
+                }
             }
+                       
+            
+            
         }
+
     }
 }
 
