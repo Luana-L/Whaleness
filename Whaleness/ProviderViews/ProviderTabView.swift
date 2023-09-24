@@ -18,7 +18,7 @@ struct ProviderTabView: View {
                     }
                 Patients()
                     .tabItem {
-                        Label("Check In", systemImage: "person.crop.rectangle.stack.fill")
+                        Label("Patients", systemImage: "person.crop.rectangle.stack.fill")
                         Text("Check In")
                     }
                 /*
@@ -32,7 +32,6 @@ struct ProviderTabView: View {
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(Color("DarkBlue"), for: .tabBar)
         }
-        .accentColor(.white)
         
     }
 }

@@ -23,8 +23,8 @@ struct HomePortalProvider: View {
                     .padding(.leading, 20)
                     .font(Font.custom("Avenir", size: 20))
                 VStack(spacing: 10) {
-                    ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date < $1.date }).prefix(3)) { appt in
-                        ApptBubbleView(apptment: appt)
+                    ForEach(ProviderAppointment.MOCK_PROVAPPT.sorted(by: { $0.date < $1.date }).prefix(3)) { provappt in
+                        ProviderApptBubbleView(provapptment: provappt)
                     }
                 }
                 .padding(.horizontal, 20)

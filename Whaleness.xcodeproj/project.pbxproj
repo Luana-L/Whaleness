@@ -32,6 +32,7 @@
 		BA29E7022ABFBA0D004429D3 /* PatientBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */; };
 		BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */; };
 		BA29E7062ABFC7CE004429D3 /* ProviderApptBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */; };
+		BA29E70A2ABFD935004429D3 /* ProviderApptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E7092ABFD935004429D3 /* ProviderApptDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientBubbleView.swift; sourceTree = "<group>"; };
 		BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecords.swift; sourceTree = "<group>"; };
 		BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderApptBubbleView.swift; sourceTree = "<group>"; };
+		BA29E7092ABFD935004429D3 /* ProviderApptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderApptDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,8 @@
 				155357582ABF893F00B85F0A /* ProviderTabView.swift */,
 				BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */,
 				BA29E7052ABFC7CE004429D3 /* ProviderApptBubbleView.swift */,
-				BA29E6F22ABFB48B004429D3 /* PatientViews */,
+				BA29E7092ABFD935004429D3 /* ProviderApptDetailView.swift */,
+				BA29E6F22ABFB48B004429D3 /* ProvidersPatientViews */,
 			);
 			path = ProviderViews;
 			sourceTree = "<group>";
@@ -159,14 +162,14 @@
 			path = HomeViews;
 			sourceTree = "<group>";
 		};
-		BA29E6F22ABFB48B004429D3 /* PatientViews */ = {
+		BA29E6F22ABFB48B004429D3 /* ProvidersPatientViews */ = {
 			isa = PBXGroup;
 			children = (
 				BA29E6F92ABFB6F1004429D3 /* Patients.swift */,
 				BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */,
 				BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */,
 			);
-			path = PatientViews;
+			path = ProvidersPatientViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +264,7 @@
 				BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */,
 				BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */,
 				BA29E7022ABFBA0D004429D3 /* PatientBubbleView.swift in Sources */,
+				BA29E70A2ABFD935004429D3 /* ProviderApptDetailView.swift in Sources */,
 				155357572ABF893200B85F0A /* PatientTabView.swift in Sources */,
 				155357592ABF893F00B85F0A /* ProviderTabView.swift in Sources */,
 				1553575B2ABF91EE00B85F0A /* ApptBubbleView.swift in Sources */,
