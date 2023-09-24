@@ -25,6 +25,7 @@ struct TreatBubbleView: View {
                         .foregroundStyle(Color("DarkGrey"))
                     }
                 }
+                .padding(5)
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             Spacer()
@@ -37,5 +38,5 @@ struct TreatBubbleView: View {
 }
 
 #Preview {
-    TreatBubbleView(treatment: Treatment.MOCK_TREAT[0])
+    TreatBubbleView(treatment: Treatment.MOCK_TREAT[1])
 }
