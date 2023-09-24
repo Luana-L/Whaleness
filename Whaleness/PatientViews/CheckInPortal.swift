@@ -6,12 +6,37 @@ struct Symptom {
     var isChecked: Bool = false
 }
 
+struct Med {
+    var name: String
+    var isChecked: Bool = false
+}
+
+var dateFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "EEEE, MMM d, yyyy"
+    return formatter
+}
+
+var timeFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "h:mm a"
+    return formatter
+}
+
 struct CheckInPortal: View {
     @State private var painLevel = 0
     @State private var symptoms = [ Symptom(name: "Fever"), Symptom(name: "Nausea"), Symptom(name: "Slurred speech"), Symptom(name: "Muscle pain"),
         Symptom(name: "")
     ]
     @State private var newSymptom = ""
+
+    @State private var submit: Bool = false
+    
+    @State private var medicines = [ Med(name: "Penicillin"), Med(name: "Vitamin C")]
+    
+    @State private var day = Date()
+    
+    
     
     var body: some View {
         NavigationStack {
@@ -126,8 +151,29 @@ struct CheckInPortal: View {
                 .padding(.horizontal)
                 .background(Color("LightGrey"))
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                .padding(.horizontal, 20)
-                Spacer()
+            }
+            
+            Text("Medication")
+                .font(Font.custom("Avenir", size: 20))
+            
+            VStack{
+                Text("\(day, formatter: dateFormatter)")
+            }
+            .padding(.vertical, 10)
+            .padding(.horizontal)
+            .background(Color("LightGrey"))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .padding(.horizontal, 20)
+            
+            
+            Button {submit = true} label: {
+                Text("Submit")
+                    .padding(.horizontal)
+                    .foregroundColor(.white)
+                    .background(Color("DarkBlue"))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
+
             }
         }
         .background(Color("OffWhite"))
