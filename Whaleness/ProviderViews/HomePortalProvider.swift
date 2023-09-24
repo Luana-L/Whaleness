@@ -50,6 +50,21 @@ struct HomePortalProvider: View {
                 .padding(.trailing, 20)
                 .padding(.bottom, 20)
                 
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: CreateNewAppt(), label: {
+                        Text("Schedule New Appointment")
+                            .font(Font.custom("Avenir", size: 24))
+                            .foregroundStyle(Color.white)
+                            .padding(10)
+                            .background(Color("DarkBlue"))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
+                    )
+                    Spacer()
+                }
+                .offset(y: 40)
+                
             }
             
             .background(Color("OffWhite"))

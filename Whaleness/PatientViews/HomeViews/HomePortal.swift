@@ -24,56 +24,66 @@ struct HomePortal: View {
                         .padding(.leading, 20)
                         .font(Font.custom("Avenir", size: 20))
                     VStack(spacing: 10) {
-                        ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date < $1.date }).prefix(3)) { appt in
+                        ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date! < $1.date! }).prefix(3)) { appt in
                             ApptBubbleView(apptment: appt)
                         }
-                    }
-                    .padding(.horizontal, 20)
-                    
-                    HStack {
-                        Spacer()
-                        Text("View past appointment records")
-                            .font(Font.custom("Avenir", size: 18))
-                            .foregroundStyle(Color.blue)
-                    }
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 20)
-                    
-                    Text("Current treatment plans...")
                         .padding(.leading, 20)
-                        .font(Font.custom("Avenir", size: 20))
-                    VStack(spacing: 10) {
-                        ForEach(Treatment.MOCK_TREAT) { treat in
-                            TreatBubbleView(treatment: treat)
+                        .padding(.vertical, 10)
+                        Text("Upcoming appointments...")
+                            .padding(.leading, 20)
+                            .font(Font.custom("Avenir", size: 20))
+                        VStack(spacing: 10) {
+                            ForEach(Appointment.MOCK_APPT.sorted(by: { $0.date! < $1.date! }).prefix(3)) { appt in
+                                ApptBubbleView(apptment: appt)
+                            }
                         }
-                    }
-                    .padding(.horizontal, 20)
-                    
-                    HStack {
-                        Spacer()
-                        Text("View all")
-                            .font(Font.custom("Avenir", size: 18))
-                            .foregroundStyle(Color.blue)
-                    }
-                    .padding(.horizontal,20)
-                    
-                    HStack {
-                        NavigationLink(destination: LandingPage()) {
-                            Text("Logout")
+                        .padding(.horizontal, 20)
+                        
+                        HStack {
+                            Spacer()
+                            Text("View past appointment records")
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundStyle(Color.blue)
-                            //loggedIn = false
                         }
-                        Spacer()
+                        .padding(.trailing, 20)
+                        .padding(.bottom, 20)
+                        
+                        Text("Current treatment plans...")
+                            .padding(.leading, 20)
+                            .font(Font.custom("Avenir", size: 20))
+                        VStack(spacing: 10) {
+                            ForEach(Treatment.MOCK_TREAT) { treat in
+                                TreatBubbleView(treatment: treat)
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                        
+                        HStack {
+                            Spacer()
+                            Text("View all")
+                                .font(Font.custom("Avenir", size: 18))
+                                .foregroundStyle(Color.blue)
+                        }
+                        .padding(.horizontal,20)
+                        
+                        HStack {
+                            NavigationLink(destination: LandingPage()) {
+                                Text("Logout")
+                                    .font(Font.custom("Avenir", size: 18))
+                                    .foregroundStyle(Color.blue)
+                                //loggedIn = false
+                            }
+                            Spacer()
+                        }
+                        .padding(.horizontal,20)
+                        
+                        
+                        .padding(.trailing, 20)
+                        .padding(.bottom, 20)
                     }
-                    .padding(.horizontal,20)
-    
                     
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 20)
+                    .background(Color("OffWhite"))
                 }
-                
-                .background(Color("OffWhite"))
             }
         }
     }
