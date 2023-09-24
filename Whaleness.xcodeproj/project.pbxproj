@@ -26,6 +26,7 @@
 		155357672ABFAF5B00B85F0A /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357662ABFAF5B00B85F0A /* TreatDetailView.swift */; };
 		155357692ABFBD2E00B85F0A /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */; };
 		38443A5A2ABFFAAD00FC94E1 /* PatientTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */; };
+		38DA50472AC07CBA000C461E /* ChatPortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */; };
 		BA29E6F62ABFB568004429D3 /* ProviderAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */; };
 		BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */; };
 		BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29E6F92ABFB6F1004429D3 /* Patients.swift */; };
@@ -57,6 +58,7 @@
 		155357662ABFAF5B00B85F0A /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
 		155357682ABFBD2E00B85F0A /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTreatment.swift; sourceTree = "<group>"; };
+		38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatPortalProvider.swift; path = Whaleness/ProviderViews/ProvidersPatientViews/ChatPortalProvider.swift; sourceTree = SOURCE_ROOT; };
 		BA29E6F52ABFB568004429D3 /* ProviderAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderAppointment.swift; sourceTree = "<group>"; };
 		BA29E6F72ABFB69C004429D3 /* HomePortalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePortalProvider.swift; sourceTree = "<group>"; };
 		BA29E6F92ABFB6F1004429D3 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				BA29E7012ABFBA0D004429D3 /* PatientBubbleView.swift */,
 				BA29E7032ABFC1A1004429D3 /* PatientRecords.swift */,
 				38443A592ABFFAAD00FC94E1 /* PatientTreatment.swift */,
+				38DA50462AC07CBA000C461E /* ChatPortalProvider.swift */,
 			);
 			path = ProvidersPatientViews;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				155357512ABF648C00B85F0A /* ChatPortal.swift in Sources */,
 				1553574F2ABF647B00B85F0A /* HomePortal.swift in Sources */,
 				BA29E6FA2ABFB6F1004429D3 /* Patients.swift in Sources */,
+				38DA50472AC07CBA000C461E /* ChatPortalProvider.swift in Sources */,
 				1553575F2ABF953100B85F0A /* ApptDetailView.swift in Sources */,
 				BA29E7042ABFC1A1004429D3 /* PatientRecords.swift in Sources */,
 				BA29E6F82ABFB69C004429D3 /* HomePortalProvider.swift in Sources */,
