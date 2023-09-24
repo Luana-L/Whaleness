@@ -1,5 +1,5 @@
 //
-//  AllPatients.swift
+//  Patient.swift
 //  Whaleness
 //
 //  Created by Jenny Ye on 9/23/23.

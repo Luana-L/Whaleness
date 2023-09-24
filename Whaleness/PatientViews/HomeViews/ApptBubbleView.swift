@@ -27,14 +27,14 @@ struct ApptBubbleView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
                     HStack {
-                        Text("Date: \(apptment.date, formatter: dateFormatter)")
+                        Text("Date: \(apptment.date!, formatter: dateFormatter)")
                         Spacer()
-                        Text(apptment.date, formatter: timeFormatter)
+                        Text(apptment.date!, formatter: timeFormatter)
                     }
                     .font(Font.custom("Avenir",size:15))
                     .foregroundColor(Color("DarkGrey"))
                     
-                    Text(apptment.location)
+                    Text(apptment.location!)
                         .font(Font.custom("Avenir",size:18))
                         .foregroundColor(.primary)
                         .bold()
