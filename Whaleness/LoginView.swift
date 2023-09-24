@@ -18,7 +18,6 @@ struct LoginView: View {
         if (isAuthenticated && isPatient) {
             PatientTabView()
                 .navigationBarBackButtonHidden(true)
-                var loggedIn = true
         } else if (isAuthenticated && !isPatient) {
             ProviderTabView()
                 .navigationBarBackButtonHidden(true)
