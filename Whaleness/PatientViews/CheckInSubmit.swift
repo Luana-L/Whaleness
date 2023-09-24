@@ -9,16 +9,33 @@ import SwiftUI
 
 struct CheckInSubmit: View {
     var body: some View {
-        HStack{
-            Text("Thank you!")
-                .font(Font.custom("Avenir", size: 30))
-                .foregroundStyle(Color("DarkBlue"))
-            Spacer()
+        NavigationView{
+            
+            VStack {
+                HStack{
+                    Text("Thank you!")
+                        .font(Font.custom("Avenir", size: 30))
+                        .foregroundStyle(Color("DarkBlue"))
+                    Spacer()
+                }
+                        NavigationLink(destination: CheckInPortal()) {
+                            Text("Submit another CheckIn?")
+                                .font(Font.custom("Avenir", size: 18))
+                                .foregroundStyle(Color.blue)
+                        }
+                        
+                        NavigationLink(destination: ChatPortal()) {
+                            Text("Talk to someone?")
+                                .font(Font.custom("Avenir", size: 18))
+                                .foregroundStyle(Color.blue)
+                        }
+                    }
+            
+            
+            .padding(.leading, 20)
+            .padding(.vertical, 10)
+            
         }
-        
-        .padding(.leading, 20)
-        .padding(.vertical, 10)
-        
     }
 }
 
