@@ -1,6 +1,6 @@
 # Whaleness - your personal aftercare assistant!
 
-[![Whaleness](http://img.youtube.com/vi/4gcSgn6DEqo/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_4gcSgn6DEqo "Whaleness - DivHacks")
+[![Whaleness](http://img.youtube.com/vi/4gcSgn6DEqo/0.jpg)](https://youtu.be/4gcSgn6DEqo "Whaleness - DivHacks")
 
 https://youtu.be/4gcSgn6DEqo
 
